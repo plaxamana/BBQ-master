@@ -52,6 +52,11 @@ h2 + p {
     font-weight: 900;
     text-transform: uppercase;
     order: -1;
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to left, #FF713B , #FFA51D) 1;
+    padding-top: 2px;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
 .fine-print {
@@ -67,9 +72,10 @@ strong { font-weight: 900; }
    ================= */
    
 .intro {
-    background-image: url(../images/dark-ribs.jpg);
+    background-image: url(../images/ribs.jpg);
     background-size: cover;
     background-color: #404040;
+    background-blend-mode: multiply;
     background-position: center;
     padding: 0 .5em 2em;
     min-height: 50vh;
@@ -115,6 +121,12 @@ input {
     margin-bottom: .75em;
     padding: .25em;
     border: 1px solid #404040;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+input:focus {
+    transform: scale(1.025);
 }
 
 .btn {
@@ -135,8 +147,9 @@ input {
     transition: transform 250ms;
 }
 
-.btn-register:hover {
-    transform: scale(1.125);
+.btn-register:hover,
+.btn-register:focus {
+    transform: scale(1.1);
 }
 
 /* =================
@@ -156,14 +169,6 @@ input {
     h2,
     h1 + p {
         font-size: 1.75rem;
-    }
-
-    h1 + p {
-        
-    }
-
-    .top-text {
-        
     }
     
     .intro,
