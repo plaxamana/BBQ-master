@@ -52,6 +52,7 @@ h2 + p {
     font-weight: 900;
     text-transform: uppercase;
     order: -1;
+    border: 0;
     border-top: 5px solid #F18119;
     border-image: linear-gradient(to left, #FF713B , #FFA51D) 1;
     padding-top: 2px;
