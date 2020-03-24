@@ -5,6 +5,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif; 
     font-size: 1rem;
@@ -21,7 +23,7 @@ h1 {
     font-size: 2.25rem;
     font-weight: 300;
     color: #fff;
-    margin: 2em 0;
+    margin: 0;
 }
 
 h1 + p {
@@ -65,13 +67,15 @@ strong { font-weight: 900; }
    ================= */
    
 .intro {
-    background-image: url(images/dark-ribs.jpg);
+    background-image: url(../images/dark-ribs.jpg);
     background-size: cover;
     background-color: #404040;
     background-position: center;
     padding: 0 .5em 2em;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -91,7 +95,7 @@ strong { font-weight: 900; }
 @media (min-width: 500px) {
     body {
         font-size: 1.125rem;
-        display: flex;
+        flex-direction: row;
     }
     
     h1 {
@@ -101,6 +105,14 @@ strong { font-weight: 900; }
     h2,
     h1 + p {
         font-size: 1.75rem;
+    }
+
+    h1 + p {
+        
+    }
+
+    .top-text {
+        
     }
     
     .intro,
